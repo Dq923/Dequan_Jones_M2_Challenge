@@ -53,7 +53,7 @@ public class ChatterbookController {
     public User getSingleUser(@PathVariable String username){ // requires a specific user's name
         User selectedUser = null;
 
-        for(User user : userList){ // if username is found, the appropriate user will be found
+        for(User user : userList){ // if username is found, the appropriate user will be selected
             if(user.getName().equals(username))
                 selectedUser = user;
         }
